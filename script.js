@@ -45,6 +45,13 @@ document.getElementById("delbtn").onclick = function () {
     document.getElementById("arrdel").innerHTML = arrdel;
 }
 
+document.getElementById("concbtn").onclick = function () {
+    let conc = document.getElementById("concat").value;
+    let arrconcat = conc.split(",");
+    let newconc =arrconcat.concat([document.getElementById("newconc").value]);
+    document.getElementById("arrconc").innerHTML = newconc;
+}
+
 document.getElementById("joinbtn").onclick = function () {
     let joinning = document.getElementById("join").value;
     let joi = joinning.split(",");
@@ -68,4 +75,3 @@ document.getElementById("splibtn").onclick = function () {
     splic.splice(val1,val2);
     document.getElementById("arrsplice").innerHTML = splic;
 }
-
